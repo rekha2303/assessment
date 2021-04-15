@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="styleSheet" />
+
+    
+   
+    <title>Document</title>
+</head>
+<body>
+    <header>     
+            <nav>  
+                <ul class="left_side">  
+                  <li>iCube</li>  
+                  <li>All
+                    <select name="" id="All">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                  </li>  
+                  
+                  <li>
+                    <label for="">Recent</label>
+
+                    <select name="" id="recent">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </li>  
+                </ul>  
+                <ul class="right_side">                  
+                    <li>  <i class='fas fa-search' style='color:white'></i></li>                 
+                    <li> <i class='far fa-heart' style='color:white'></i></li>
+                    <li> <i class='far fa-bell' style='color:white'></i></li>
+                </ul>
+            </nav>        
+    </header>
+
+    <div class="container">
+    <div class="left-scroll">
+        <ul id="left">    
+            
+            <li><i class='far fa-file-alt' style='color:rgba(104, 100, 100, 0.849)'></i></li>
+           
+            <li><i class="fa fa-th-large" style="color:rgba(104, 100, 100, 0.849)"></i></li>
+            <li><i class='	far fa-edit' style='color:rgba(104, 100, 100, 0.849)'></i></li>
+            <li><i class="fa fa-cog" style='color:rgba(104, 100, 100, 0.849)'></i></li>
+        
+            <li><i class='far fa-calendar-alt' style='color:rgba(104, 100, 100, 0.849)'></i></li>
+            <li id="user"><i class="fa fa-user"></i></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="con1">
+            <div class="box1">
+                <p>Purcase Order</p><hr>              
+                <p style="font-size:25px;">9180</p>
+            </div>
+
+            <div class="box2"><p>Pending Order</p><hr>              
+                <p style="font-size:25px;">50</p>
+            </div>
+
+            <div class="box3"><p>Purcase Order</p><hr>              
+                <p style="font-size:25px;">500</p>
+            </div>
+
+            <div class="box4"><p>Pending Order</p><hr>              
+                <p style="font-size:25px;">650</p>
+            </div>
+
+            <div class="box5">
+                <p>Pending Order</p><hr>              
+                <p style="font-size:25px;">1250</p>
+            </div> 
+        </div>
+
+        <div class="con2">
+            <input type="text" id="search-input" onkeyup="myFunction()" placeholder="Search here" title="Search"/>
+            <!-- <button id="btn">+ Create</button> -->
+            <p id="para"></p>
+        </div>
+
+        <div class="con3">
+         
+                <table  id="tbl-container">
+                  <tr>
+                      <td colspan="16">Drag here to set row guest</th>
+                  </tr>
+                <tr>
+                    <th colspan="4">Invoice</th>
+                    
+                    <th scope="col" colspan="3">Purchase Order</th>                    
+                    <th scope="col" colspan="3">Stock Recieved</th>
+                   
+                    <th scope="col">Logistic</th>
+                    <th scope="col">Stocks</th>
+                    <th scope="col">Return</th>
+                    <th scope="col">Sales</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col">Amount</th>
+                   
+                  </tr>
+                  <tr id="userData">
+                    <th scope="col" colspan="2"><input type="checkbox" id="invoice" name="invoice" value="invoice" />Invoice No</th>
+                    <th scope="col" colspan="2">Date</th> 
+                    <th scope="col" colspan="2">Order no</th>
+                    <th scope="col" colspan="2">Order Date</th>
+                    <th scope="col" colspan="3">Bought</th> 
+                    <th scope="col" colspan="2">Bank Balance</th>
+                    <th scope="col" colspan="3">Rate</th>
+                  
+                   
+                  </tr>
+                  <tr id="userData">
+                    <th scope="col" colspan="2"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th>
+                    <th scope="col" colspan="2"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th> 
+                    <th scope="col" colspan="2"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th>
+                    <th scope="col" colspan="3"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th>
+                    <th scope="col" colspan="3"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th> 
+                    <th scope="col" colspan="4"><input type="text" style="width: 100px;"/><i class='fas fa-sort-down' style='font-size:24px'></i></th>
+                 
+                  
+                   
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th"><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Po no</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th"><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Rekha</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th"><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Ravi</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th"><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Rashmi</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th" ><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Neha</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th" ><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Abdulah</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  <tr id="userData">
+                    <td colspan="3"><i class="fa fa-th" ><input type="checkbox" id="invoice" name="invoice" value="invoice" style="margin:10px"></i>Abdulah</td>
+                    <td colspan="3"> tamil</td>
+                    <td colspan="2">india</td>
+                    <td colspan="4">app dev</td>
+                    <td colspan="2">$1000</td>
+                    <td colspan="2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></td>
+                                    
+                  </tr>
+                  
+
+                
+
+                
+                </table>
+        </div>
+    </div>
+</div>
+
+<script src="index.js">
+    
+</script>
+</body>
+</html>

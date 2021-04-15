@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+}
+
+nav{
+  display:flex;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(36, 35, 54);
+}
+nav > ul{
+  display: flex;
+  flex-grow: 1;
+  list-style-type:none;
+  color: aliceblue;
+  }
+  li{
+    padding-left: 10px;
+  }
+.left_side{
+  width: 70%;
+  padding-top: 10px;
+padding-left: 20px;
+}
+.left_side> li{
+  padding-right: 30px;
+
+
+}
+.right_side{
+
+  width: 30%;
+  padding-top: 10px;
+  padding-left: 280px;
+
+
+}
+
+select{
+  background-color: rgb(36, 35, 54);
+  border: rgb(36, 35, 54);
+}
+
+.left-scroll{
+  display: flex;
+  width: 60px;
+  background-color: #fff;
+  padding-top: 160px;
+ border-right: 1px solid rgba(104, 100, 100, 0.849);
+}
+.left-scroll> ul li{
+  justify-content: space-between;
+  padding-bottom: 26px;
+  padding-left: 15px;
+}
+#user{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 180px;
+}
+.container{
+  display: flex;
+}
+
+.content{
+  width: 95%;
+}
+.con1{
+  display: flex;
+}
+.con1>div{
+  width:220px;
+  height: 70px;
+  border-radius: 10px;
+  margin-left:20px;
+  margin-top: 8px;
+
+}
+.box1{
+  border-radius: 10px;
+  border: 1px solid brown;
+  border-left-width: 20px;
+}
+.box2{
+  border-radius: 10px;
+  border: 1px solid green;
+  border-left-width: 20px;
+}
+.box3{
+  border-radius: 10px;
+  border: 1px solid rgb(77, 77, 182);
+  border-left-width: 20px;
+}
+.box4{
+  border-radius: 10px;
+  border: 1px solid rgb(78, 197, 187);
+  border-left-width: 20px;
+}
+.box5{
+  border-radius: 10px;
+  border: 1px solid green;
+  border-left-width: 20px;
+}
+.box1>p{
+  text-align: center;
+  height: 50%;
+  padding-top: 6px;
+  color: brown;
+}
+.box1> hr{
+  border-color: brown;
+}
+.box2>hr{
+  border-color: green;
+}
+.box3>hr{
+  border-color: rgb(77, 77, 182);
+}
+.box4>hr{
+  border-color: rgb(78, 197, 187);
+}
+.box5>hr{
+  border-color: green;
+}
+.box2>p{
+  text-align: center;
+  height: 50%;
+  padding-top: 6px;
+  color: green;
+}
+.box3>p{
+  text-align: center;
+  height: 50%;
+  padding-top: 6px;
+  color: rgb(69, 69, 199);
+}
+.box4>p{
+  text-align: center;
+  height: 50%;
+  padding-top: 6px;
+  color: rgb(78, 197, 187);
+}
+.box5>p{
+  text-align: center;
+  height: 50%;
+  padding-top: 6px;
+  color: green;
+}
+.con2{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.con2>input{
+  width: 360px;
+  height: 30px;
+
+  margin-right: 20px;
+}
+
+.con2>button{
+  width: 100px;
+  border-radius: 4px;
+  color: rgb(42, 143, 146);
+
+}
+.con3{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+thead {color:Brown ;}
+tbody {color:CadetBlue ;}
+tfoot {color:LightCoral;}
+table,th, td{
+    border: 1px solid rgb(199, 193, 193);
+    border-collapse: collapse;
+   
+}
+th,td{
+  width: 120px;
+  height: 40px;
+  color: black;
+ 
+}
+th{
+  font-weight:bold;
+}
+#userData{
+  text-align: center;
+}
